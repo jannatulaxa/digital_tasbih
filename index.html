@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tashbih</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <section class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-6 ">
+            <div class="text-center md:text-6xl text-4xl font-bold text-purple-600  ">
+                Digital Tasbih
+            </div>
+        </section>
+    </header>
+
+    <!-- main -->
+    <main>
+        <section class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-6 ">
+            <!-- cards -->
+            <div class="grid lg:grid-cols-3 md:grid-cols-1 md:space-y-3 
+            space-y-3 lg:space-x-3 justify-center items-center">
+                <!-- single_card -->
+                <div>
+                    <div class="card lg:mt-[1rem] bg-purple-900 text-neutral-content shadow-[0_20px_20px_-20px_rgba(0,0,0,0.9)]">
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-bold text-3xl">Subhan Allah</h2>
+                          <p id="Subhanalllah_Display" class="text-5xl mb-5 mt-3">0</p>
+                          <div class="card-actions justify-end">
+                            <button id="subhanalllah_Incriment" class="btn border-none bg-purple-600 font-bold">INCRIMENT</button>
+                            <button id="Subhanalllah_Decriment" class="btn btn-ghost">DECREMENT</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single_card -->
+                <div >
+                    <div class="card bg-purple-900 text-neutral-content shadow-[0_20px_20px_-20px_rgba(0,0,0,0.9)]">
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-bold text-3xl">Bismillah</h2>
+                          <p id="Bismillah_Display" class="text-5xl mb-5 mt-3">0</p>
+                          <div class="card-actions justify-end">
+                          <button id="Bismilla_Incriment" class="btn border-none bg-purple-600 font-bold">INCRIMENT</button>
+                          <button id="Bismilla_Decriment" class="btn btn-ghost">DECREMENT</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single_card -->
+                <div>
+                    <div class="card bg-purple-900 text-neutral-content shadow-[0_20px_20px_-20px_rgba(0,0,0,0.9)]">
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-bold text-3xl">Alhamdulillah</h2>
+                          <p id="Alhamdulillah_Display" class="text-5xl mb-5 mt-3">0</p>
+                          <div class="card-actions justify-end">
+                          <button id="Alhamdulillah_Incriment" class="btn border-none bg-purple-600 font-bold">INCRIMENT</button>
+                          <button id="Alhamdulillah_Decriment" class="btn btn-ghost">DECREMENT</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <div class="mt-10 text-center">
+            <button id="Reset" class="btn border-none bg-purple-600 font-bold text-white">Reset All Tasbih</button>
+        </div>
+
+    </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
